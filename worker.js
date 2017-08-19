@@ -3,7 +3,7 @@
 
 var amqp = require('amqplib');
 
-amqp.connect('amqp://rabbitmq').then(function(conn) {
+amqp.connect('amqp://'+process.env.RABBITMQ).then(function(conn) {
   process.once('SIGINT', function() { conn.close(); });
   return conn.createChannel().then(function(ch) {
     var ok = ch.assertQueue('task_queue', {durable: true});
