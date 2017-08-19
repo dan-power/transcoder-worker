@@ -1,0 +1,14 @@
+{
+  "name": "transcoder-worker",
+  "version": "1.0.0",
+  "description": "worker container to transcode one video.",
+  "main": "worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Power",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.1"
+  }
+}
