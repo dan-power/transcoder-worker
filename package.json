@@ -9,6 +9,8 @@
   "author": "Dan Power",
   "license": "ISC",
   "dependencies": {
-    "amqplib": "^0.5.1"
+    "amqplib": "^0.5.1",
+    "duration": "^0.2.0",
+    "handbrake-js": "^2.2.2"
   }
 }
